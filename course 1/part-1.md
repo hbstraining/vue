@@ -82,7 +82,7 @@ const shoppingList = new Vue({
     data: {
         header: 'vue shopping list content'
     }
-})
+});
 ```
 
 Now you can open up Chrome Dev tools and change the data in the Vue instance directly to see the changes affect the HTML.

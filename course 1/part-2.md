@@ -17,7 +17,7 @@ At the end of last class, we left off with the following in our **index.html** f
             data: {
                 header: 'vue shopping list content'
             }
-        })
+        });
     </script>
 </body>
 ```
@@ -68,7 +68,7 @@ In preparation for the next lesson, revert the changes above and reset your **in
 ```html
 <body>
     <div id="shopping-list">
-        <h1>{{ header }}</h1>
+        <h1>{{ header.toLocaleUpperCase() }}</h1>
         <input type="text" v-model="header">
     </div>
 
@@ -80,7 +80,7 @@ In preparation for the next lesson, revert the changes above and reset your **in
             data: {
                 header: 'shopping list app'
             }
-        })
+        });
     </script>
 </body>
 ```
