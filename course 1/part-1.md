@@ -55,7 +55,7 @@ new Vue({
 })
 ```
 
-next, we'll use Vue's templating syntax (double-mustache syntax) to dynaically bind the header data from the Vue instance to the HTML.
+Next, we'll use Vue's templating syntax (double-mustache syntax) to dynaically bind the header data from the Vue instance to the HTML.
 
 ```html
 <div id="shopping-list">
@@ -72,7 +72,7 @@ This is a one way binding from our Vue instance to the HTML.  Changes to the Vue
 </div>
 ```
 
-now, when you change the value in the input, it changes the value displayed in the `<h1>`.
+Now, when you change the value in the input, it changes the value displayed in the `<h1>`.
 
 To see that binding doesn't just flow from the template to the Vue instance, but the other way as well, let's make a small modification to the code.  Instead of declaring `new Vue`, let's assign our Vue instance to a variable called `shoppingList`
 
@@ -90,4 +90,3 @@ Now you can open up Chrome Dev tools and change the data in the Vue instance dir
 ```js
 shoppinglist.$data.header = 'console shopping list';
 ```
-
