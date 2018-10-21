@@ -1,3 +1,7 @@
+## What we're building
+
+[shopping list app](https://codepen.io/autoboxer/pen/KXXJvE)
+
 ## Details
 
 In this course, you'll be introduced to what Vue.js can do, without digging deeply into what makes it work.  In writing your first Vue.js shopping list application, you'll be exposed to the following concepts:
@@ -11,6 +15,6 @@ In this course, you'll be introduced to what Vue.js can do, without digging deep
 1. Vue.js Methods and Computed Properties
 1. attribute Bindings and dynamic classes
 
-### What we're building
+## Running the Code
 
-[shopping list app](https://codepen.io/autoboxer/pen/KXXJvE)
+For this first course, simply open the **index.html** file in your browser.
