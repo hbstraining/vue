@@ -1,5 +1,3 @@
-# vue-school
-
 <p align="center">
   <a href="https://hub.hbs-training.com" target="_blank">
     <img width="100"src="https://res.cloudinary.com/autoboxer/image/upload/v1540070920/logo.svg">
