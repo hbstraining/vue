@@ -22,7 +22,7 @@ At the end of last class, we left off with the following in our **index.html** f
 </body>
 ```
 
-We've already used Vue's templating syntax to bind data to the DOM, but it turns out we can use any JavaScript expression inside the double-mustache.  So for instance, if you want to convert the header to uppercase, you can just do the following:
+We've already used Vue's templating syntax to bind data to the DOM, but it turns out we can use any JavaScript expression inside the double-mustache.  So for instance, if we want to convert the header to uppercase, we can just do the following:
 
 ```html
 <h1>{{ header.toLocaleUpperCase() }}</h1>

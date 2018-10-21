@@ -60,10 +60,26 @@ Next, add an input element to the template, using `v-model` to bind it to the `n
 </div>
 ```
 
-This will keep the `newItem` property in sync with what the user types in the input box.  At this point, I'd like to introduce a useful tool for seeing what's going on in a Vue application.  Follow [this link](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) and install the Vue Devtools browser extension in Chrome.  Vue Devtools in an integral part of a Vue developers workflow.
+This will keep the `newItem` property in sync with what you type in the input box.  At this point, I'd like to introduce a useful tool for seeing what's going on in a Vue application.  Follow [this link](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) and install the Vue Devtools browser extension in Chrome.  Vue Devtools in an integral part of a Vue developers workflow.
 
 Once you've finished the installation, you'll notice a Vue icon next to the URL bar which appears grey.  Clicking on the icon will display the message **Vue.js not detected**.  The reason it's not detecting that we have Vue installed in our application is that we're serving it directly from the file system instead of using a web server.  To get this to work, you'll need to modify your Chrome Devtools settings.  Click on the three vertical dots to the right of the Vue Devtools icon, Select **More Tools**, then **Extensions**.  Scroll down to Vue Devtools and click on the **Details** button, then scroll down and turn on **Allow access to file URLs**.
 
-At this point, reloading the page will show that Vue is recognized on the page by the fact that the Vue Devtools icon is green.  To vue details of the application, navigate to the **Vue** tab in Chrome Devtools.  Clicking on the `<Root>` element will give you access to view, add, delete, and update the data in our application.
+At this point, reloading the page will show that Vue is recognized on the page by the fact that the Vue Devtools icon is green.  To view details of the application, navigate to the **Vue** tab in Chrome Devtools.  Clicking on the `<Root>` element will give you access to view, add, delete, and update the data in our application.
 
 As a test, with Vue Devtools open, start to type in the input box and watch the `newItem` property update in real time.
+
+Now that we're debugging using Vue Devtools, we don't need to create our Vue application with an expression.  You can now change your initialization code from an expression assigning the instance to a `shoppingList` variable to the following.
+
+```js
+new Vue({
+    el: '#shopping-list',
+    data: {
+        header: 'shopping list app',
+        items: [
+            '3 strip steaks',
+            '2 bell peppers',
+            'head of garlic',
+            'olive oil'
+        ]
+    }
+});

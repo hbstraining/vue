@@ -18,7 +18,7 @@ At the end of last class, we left off with the following in our **index.html** f
     <script src="https://unpkg.com/vue"></script>
 
     <script>
-        const shoppingList = new Vue({
+        new Vue({
             el: '#shopping-list',
             data: {
                 header: 'shopping list app',
@@ -35,10 +35,10 @@ At the end of last class, we left off with the following in our **index.html** f
 </body>
 ```
 
-It's an important practice when coding to keep your code DRY (don't repeat yourself).  When there is identical code running in a few different places, it's best to move the implementation to a shared function.  In the case of a Vue app, this involves creating a **method**.  To do this, we start by adding a **methods** attribute to the init object.
+It's an important practice when coding to keep your code DRY (Don't Repeat Yourself).  When there is identical code running in a few different places, it's best to move the implementation to a shared function.  In the case of a Vue app, this involves creating a **method**.  To do this, we start by adding a **methods** attribute to the init object.
 
 ```js
-const shoppingList = new Vue({
+new Vue({
     el: '#shopping-list',
     data: {
         header: 'shopping list app',
@@ -83,9 +83,9 @@ The final step is to replace the logic in the `v-on`s with a call to the method.
 <button class="btn btn-primary" @click="saveItem">Save it</button>
 ```
 
-You may be wondering why we don't reference the `saveItem` method in the code above with parens like `saveItem()`, and the reason is that Vue is smart enough to understand when the name references a variable or a method based on what exists in the Vue instance.
+You may be wondering why we don't reference the `saveItem` method in the code above with parens like `saveItem()`, and the reason is that Vue is smart enough to understand when the name references a variable and when it references method based on what exists in the Vue instance.
 
-One way to improve the application would be to clear out the user's input once the item has been added to the array.  To do this regardless of how the item is added, simple add a line to the `saveItem` method.
+Another way to improve the application would be to clear out the user's input once the item has been added to the array.  To do this regardless of where the item is added, simply add the following line to the `saveItem` method.
 
 ```js
 saveItem() {

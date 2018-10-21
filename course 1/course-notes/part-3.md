@@ -50,7 +50,7 @@ Next we need to loop over our list of items using a directive called `v-for`.  W
 </div>
 ```
 
-While this may look new and weird, if you break it down, it actually reads like a sentence: 
+While this may look new and weird, if you break it down, it actually reads like a sentence:
 
 *we'd like an an `<li>` for each item in our items array*
 

@@ -18,7 +18,7 @@ At the end of last class, we left off with the following in our **index.html** f
     <script src="https://unpkg.com/vue"></script>
 
     <script>
-        const shoppingList = new Vue({
+        new Vue({
             el: '#shopping-list',
             data: {
                 header: 'shopping list app',

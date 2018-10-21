@@ -1,6 +1,6 @@
 # Getting Started
 
-To start, we'll need to add Vue to our page.  The easiest way to do this is to simply include it in **index.html** at the bottom of your `<body>` tag.
+To start, let's include Vue on the page.  The easiest way to do this is to include it in **index.html** at the bottom of the `<body>` tag.
 
 ```html
 <body>
@@ -8,7 +8,7 @@ To start, we'll need to add Vue to our page.  The easiest way to do this is to s
 </body>
 ```
 
-Next, create the `<div>` which will contain our Vue app will live.
+Next, create the `<div>` which will contain the Vue app.
 
 ```html
 <body>
@@ -20,7 +20,7 @@ Next, create the `<div>` which will contain our Vue app will live.
 </body>
 ```
 
-Vue isn't currently doing anything on the page, even though we've loaded it in with the `<script>` tag.  Let's update our code to make use of Vue.  For this simple application, we'll do everything in `<script>` tags within our **index.html** file, although in the future we'll be making use of Vue modules to separate our code more cleanly.  To get vue on the page, we'll need to create a Vue instance, and pass it a config object.
+Vue isn't currently doing anything on the page, even though we've loaded it in with the `<script>` tag.  Let's update our code to make use of Vue.  For this simple application, we'll do everything in `<script>` tags within the **index.html** file, although in the future we'll be making use of Vue modules to separate our code more cleanly.  To get Vue on the page, we'll need to create a Vue instance, and pass it a config object.
 
 ```html
 <body>
@@ -36,7 +36,7 @@ Vue isn't currently doing anything on the page, even though we've loaded it in w
 </body>
 ```
 
-Vue doesn't know what part of the HTML to bind to, unless we specify using the `el` attribute in the passed in config object. `el` is short for 'element', and is the standard name for most front-end frameworks.
+Vue doesn't know what part of the HTML to bind to unless we specify using the `el` attribute in the passed in config object. `el` is short for 'element', and is the standard name for most front-end frameworks.
 
 ```js
 new Vue({
@@ -44,7 +44,7 @@ new Vue({
 })
 ```
 
-That's all we need to do to instantiate Vue.  Next, let's add some data to the Vue instance, which is done using the `data` attribute in the passed in config object.  `data` is where we can store any data we want our Vue instance to use.
+That's all we need to do to instantiate Vue.  Next, let's add some data to the Vue instance, which is done using the `data` attribute in the passed in config object.  `data` is where we can store any data we want the Vue instance to use.
 
 ```js
 new Vue({
@@ -55,7 +55,7 @@ new Vue({
 })
 ```
 
-Next, we'll use Vue's templating syntax (double-mustache syntax) to dynaically bind the header data from the Vue instance to the HTML.
+Next, use Vue's templating syntax (double-mustache syntax) to dynaically bind the header data from the Vue instance to the HTML.
 
 ```html
 <div id="shopping-list">
@@ -63,7 +63,7 @@ Next, we'll use Vue's templating syntax (double-mustache syntax) to dynaically b
 </div>
 ```
 
-This is a one way binding from our Vue instance to the HTML.  Changes to the Vue data will change the HTML, however, Vue's reactivity allows us to create two-way bindings between an `<input>` element and the Vue instance.  To do this, we'll use a few things, the first is a new `<input>` field, and the second is our first directive `v-model`.
+This is a one way binding from our Vue instance to the HTML.  Changes to the Vue data will change the HTML, however, Vue's reactivity allows us to create two-way bindings between an `<input>` element and the Vue instance as well.  To do this, we'll use a few things, the first is a new `<input>` field, and the second is our first directive `v-model`.
 
 ```html
 <div id="shopping-list">

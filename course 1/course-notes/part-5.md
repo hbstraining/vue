@@ -15,7 +15,7 @@ At the end of last class, we left off with the following in our **index.html** f
     <script src="https://unpkg.com/vue"></script>
 
     <script>
-        const shoppingList = new Vue({
+        new Vue({
             el: '#shopping-list',
             data: {
                 header: 'shopping list app',
@@ -32,7 +32,7 @@ At the end of last class, we left off with the following in our **index.html** f
 </body>
 ```
 
-In order to add the new item the user has typed to our `items` array, we'll start by adding a button to the page.
+In order to add the new item we've typed to our `items` array, we'll start by adding a button to the page.
 
 ```html
 <div id="shopping-list">
@@ -53,7 +53,7 @@ The only thing left to do now is watch for a click event on the button, and push
 <button class="btn btn-primary" v-on:click="items.push( newItem )">Save it</button>
 ```
 
-To make the application more functional, let's allow the user to save the contents of the text box using the **enter** key.  Because we're listening for a key event, `v-on` is the correct directive to use.  Vue has several key modifiers to look for common key events, which allows us to write with a nice shorthand.
+To make the application more functional, let's make it possible to save the contents of the text box using the **enter** key.  Because we're listening for a key event, `v-on` is the correct directive to use.  Vue has several key modifiers to look for common key events, which allows us to write with a nice shorthand.
 
 ```html
 <input v-model="newItem" type="text" placeholder="add an item" v-on:keyup.enter="items.push( newItem )">
