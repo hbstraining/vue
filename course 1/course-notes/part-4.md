@@ -1,4 +1,4 @@
-# User Inputs & Vue Devtools
+# User Input & Vue Devtools
 
 At the end of last class, we left off with the following in our **index.html** file.  You should use this as your starting point.
 
