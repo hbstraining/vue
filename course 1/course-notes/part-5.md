@@ -37,7 +37,7 @@ In order to add the new item the user has typed to our `items` array, we'll star
 ```html
 <div id="shopping-list">
     <h1>{{ header.toLocaleUpperCase() }}</h1>
-    <div class="item-add-form">
+    <div class="add-item-form">
         <input v-model="newItem" type="text" placeholder="add an item">
         <button class="btn btn-primary">Save it</button>
     </div>

@@ -6,7 +6,7 @@ At the end of last class, we left off with the following in our **index.html** f
 <body>
     <div id="shopping-list">
         <h1>{{ header.toLocaleUpperCase() }}</h1>
-        <div class="item-add-form">
+        <div class="add-item-form">
             <input v-model="newItem" type="text" placeholder="add an item" @keyup.enter="items.push( newItem )">
             <button class="btn btn-primary" @click="items.push( newItem )">Save it</button>
         </div>
