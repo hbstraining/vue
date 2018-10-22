@@ -35,6 +35,7 @@ for **Mac** users, execute the command or click on the link and follow the instr
 1. [Hyper](https://hyper.is/)
 1. [Homebrew](https://brew.sh/)
 1. [VSCode](https://code.visualstudio.com/)
+1. [Macdown](https://macdown.uranusjr.com/)
 1. **n** - this will allow you to switch between versions of Node.js
 ```
 brew install n
