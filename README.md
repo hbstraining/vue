@@ -14,11 +14,11 @@ first ensure you have all the prerequisite installations and accounts listed bel
 
 HTTPS
 ```
-git clone https://github.com/autoboxer/vue-school.git
+git clone https://github.com/hbstraining/vue.git
 ```
 SSH
 ```
-git@github.com:autoboxer/vue-school.git
+git clone git@github.com:hbstraining/vue.git
 ```
 
 ## Prerequisite Installations
